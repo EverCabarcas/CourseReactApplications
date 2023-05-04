@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Cargar React. -->
+  <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
+  <title>ReactApp</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+
+    <script type="text/babel">
+
+        const divRoot = document.querySelector('#root')
+        const nombre = 'Ever';
+        const h1tag = <h1>Hola, soy {nombre}</h1>;
+
+        ReactDOM.render(h1tag, divRoot)
+
+    </script>
+    
+</body>
+</html>
